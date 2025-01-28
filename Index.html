@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ani-Scope</title>
+  <style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url('Logos/AllBackground.jpg');
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        background-attachment: fixed; 
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        height: 100vh; 
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        padding-top: 100px; 
+        position: relative;
+    }
+
+    .logo {
+      position: absolute;
+      top: 13px;
+      left: 20px;
+    }
+
+    .logo img {
+      width: 150px;
+      height: auto;
+    }
+
+    .navbar {
+      position: absolute;
+      top: 45px;
+      right: 20px;
+      background-color: rgb(230, 102, 226);
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .navbar a {
+      color: rgb(7, 7, 7);
+      text-decoration: none;
+      padding: 10px;
+      margin: 0 15px;
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+
+    .description {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(255, 255, 255, 0.8); 
+      padding: 20px;
+      width: 70%; 
+      max-width: 800px; 
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    .description h2 {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+
+    .description p {
+      font-size: 18px;
+    }
+
+    .anime-photo-list {
+      display: flex;
+      flex-wrap: wrap; 
+      justify-content: center;
+      gap: 15px; 
+      position: absolute;
+      top: 60%; 
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80%; 
+    }
+
+    .anime-photo-box {
+      padding: 10px;
+      border: 3px solid #30002a;
+      border-radius: 8px; 
+      background-color: rgba(153, 22, 163, 0.8); 
+    }
+
+    .anime-photo-list img {
+      width: 150px; 
+      height: auto;
+      border-radius: 8px; 
+    }
+
+    .footer {
+      position: absolute;
+      bottom: -50vh;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 12px; 
+      color: white; 
+      text-align: center;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .logo img {
+        width: 120px;
+      }
+
+      .navbar {
+        top: 20px;
+        right: 10px;
+      }
+
+      .navbar a {
+        font-size: 16px;
+        margin: 0 10px;
+      }
+
+      .description {
+        top: 30%;
+        width: 90%;
+        max-width: none;
+      }
+
+      .anime-photo-list {
+        top: 70%;
+        width: 90%;
+      }
+
+      .anime-photo-box {
+        width: 45%;
+      }
+
+      .footer {
+        font-size: 14px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .navbar {
+        top: 15px;
+        right: 5px;
+      }
+
+      .navbar a {
+        font-size: 14px;
+        margin: 0 8px;
+      }
+
+      .description {
+        top: 25%;
+        width: 95%;
+      }
+
+      .anime-photo-list {
+        top: 75%;
+        width: 95%;
+      }
+
+      .anime-photo-box {
+        width: 100%;
+      }
+
+      .footer {
+        font-size: 16px;
+      }
+    }
+
+    </style>
+</head>
+<body>
+
+  <div class="logo">
+    <img src="Logos/Ani-scopelogo.png" alt="Logo"> 
+  </div>
+
+  <div class="navbar">
+    <a>Home</a>
+    <a href="Review.html">Review</a>
+    <a href="Top-Anime.html">Top-Anime</a>
+    <a href="Latest-News.html">Latest-news</a>
+    <a href="Contact.html">Contact us</a>
+  </div>
+
+  <div class="description">
+    <h2>ANI-SCOPE</h2>
+    <p>This is a description box that will provide information about the website or anything you want to showcase.</p>
+  </div>
+
+  <div class="anime-photo-list">
+    <div class="anime-photo-box">
+      <img src="Top-Animes/Chainsaw Man.jpg" alt="Anime 1">
+    </div>
+    <div class="anime-photo-box">
+      <img src="Top-Animes/Dan Da Dan.jpg" alt="Anime 2">
+    </div>
+    <div class="anime-photo-box">
+      <img src="Top-Animes/Fire Force.jpg" alt="Anime 3">
+    </div>
+    <div class="anime-photo-box">
+      <img src="Top-Animes/Gachiakuta.jpg" alt="Anime 4">
+    </div>
+    <div class="anime-photo-box">
+      <img src="Top-Animes/Kaiju No. 8.jpg" alt="Anime 5">
+    </div>
+    <div class="anime-photo-box">
+      <img src="Top-Animes/Lazarus.jpg" alt="Anime 6">
+    </div>
+    <div class="anime-photo-box">
+      <img src="Top-Animes/My Happy Marriage.jpg" alt="Anime 7">
+    </div>
+    <div class="anime-photo-box">
+      <img src="Top-Animes/My Hero Academia.jpg" alt="Anime 8">
+    </div>
+    <div class="anime-photo-box">
+      <img src="Top-Animes/Sakamoto Days.jpg" alt="Anime 9">
+    </div>
+    <div class="anime-photo-box">
+      <img src="Top-Animes/Solo Leveling.jpg" alt="Anime 10">
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>© 2025 Ani-Scope. All Rights Reserved.</p>
+  </div>
+
+</body>
+</html>
