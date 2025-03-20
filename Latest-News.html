@@ -3,24 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ani-Scope</title>
+  <title>Latest News - Ani-Scope</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <style>
     body {
         margin: 0;
         padding: 0;
         background-image: url('Logos/AllBackground.jpg');
-        background-size: cover; 
-        background-position: center; 
-        background-repeat: no-repeat; 
-        background-attachment: fixed; 
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        height: 100vh; 
+        height: 100vh;
         display: flex;
-        justify-content: center;
-        align-items: flex-start;
         flex-direction: column;
-        padding-top: 100px; 
-        position: relative;
+        align-items: center;
+        padding-top: 100px;
     }
 
     .logo {
@@ -34,34 +33,15 @@
       height: auto;
     }
 
-    .navbar {
-      position: absolute;
-      top: 45px;
-      right: 20px;
-      background-color: rgb(230, 102, 226);
-      padding: 10px;
-      border-radius: 5px;
-    }
-
-    .navbar a {
-      color: rgb(7, 7, 7);
-      text-decoration: none;
-      padding: 10px;
-      margin: 0 15px;
-      font-size: 18px;
-      text-transform: uppercase;
-    }
-
     .latest-news {
-  position: relative;
-  margin: 300px auto 0; /* Increased the top margin to move it lower */
-  background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 10px;
-  width: 80%;
-  max-width: 800px;
-  padding: 20px;
-}
-
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      width: 80%;
+      max-width: 800px;
+      padding: 20px;
+      margin-top: 120px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
 
     .latest-news h2 {
       font-size: 24px;
@@ -93,88 +73,79 @@
     }
 
     .footer {
-      position: absolute;
-      bottom: -300px;
-      left: 50%;
-      transform: translateX(-50%);
-      font-size: 12px; 
-      color: white; 
+      margin-top: 50px;
+      font-size: 16px;
+      color: white;
       text-align: center;
     }
 
-    /* Responsive Styles */
     @media (max-width: 768px) {
       .logo img {
         width: 120px;
       }
-
-      .navbar {
-        top: 20px;
-        right: 10px;
-      }
-
-      .navbar a {
-        font-size: 16px;
-        margin: 0 10px;
-      }
-
-    }
-
-    .footer {
-         font-size: 16px;
     }
   </style>
 </head>
 <body>
 
-  <div class="logo">
-    <img src="Logos/Ani-scopelogo.png" alt="Logo"> 
-  </div>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top" style="background: linear-gradient(90deg, #6a0dad, #ff007f); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="Index.html" style="color: white; font-weight: bold; font-size: 1.8rem; letter-spacing: 2px;">Ani-Scope</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <div class="navbar-nav">
+          <a class="nav-link" href="Index.html" style="color: white; font-size: 1.2rem;">Home</a>
+          <a class="nav-link" href="Review.html" style="color: white; font-size: 1.2rem;">Review</a>
+          <a class="nav-link" href="Top-Anime.html" style="color: white; font-size: 1.2rem;">Top Anime</a>
+          <a class="nav-link active" href="Latest-News.html" style="color: white; font-size: 1.2rem;">Latest News</a>
+          <a class="nav-link" href="Contact.html" style="color: white; font-size: 1.2rem;">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </nav>
 
-  <div class="navbar">
-    <a href="Index.html">Home</a>
-    <a href="Review.html">Review</a>
-    <a href="Top-Anime.html">Top-Anime</a>
-    <a>Latest-news</a>
-    <a href="Contact.html">Contact us</a>
+  <div class="logo">
+    <img src="Logos/Ani-scopelogo.png" alt="Logo">
   </div>
 
   <div class="latest-news">
     <h2>Latest News</h2>
-
     <div class="news-container">
-        <div class="news-item">
-          <h3>New Anime Release: "Epic Adventures"</h3>
-          <p>The highly anticipated anime "Epic Adventures" is set to premiere next week. Fans are eagerly awaiting its breathtaking visuals and storyline.</p>
-        </div>
-      
-        <div class="news-item">
-          <h3>Top 10 Anime of the Year</h3>
-          <p>Discover which anime made it to the top 10 list this year. From action-packed series to heartwarming tales, see if your favorite made the cut!</p>
-        </div>
-      
-        <div class="news-item">
-          <h3>Anime Convention 2025</h3>
-          <p>Mark your calendars for the upcoming Anime Convention 2025! Get ready for exclusive merchandise, cosplay contests, and meet-and-greets with creators.</p>
-        </div>
-      
-        <div class="news-item">
-          <h3>Streaming Update</h3>
-          <p>More anime titles are now available for streaming! Catch up on classics and discover new favorites on your favorite platforms.</p>
-        </div>
-      
-        <div class="news-item">
-          <h3>Fan Art Contest Winners Announced</h3>
-          <p>Congratulations to the winners of our recent fan art contest! Check out their amazing works on our official website.</p>
-        </div>
+      <div class="news-item">
+        <h3>New Anime Release: "Epic Adventures"</h3>
+        <p>The highly anticipated anime "Epic Adventures" is set to premiere next week. Fans are eagerly awaiting its breathtaking visuals and storyline.</p>
       </div>
-      
-
+    
+      <div class="news-item">
+        <h3>Top 10 Anime of the Year</h3>
+        <p>Discover which anime made it to the top 10 list this year. From action-packed series to heartwarming tales, see if your favorite made the cut!</p>
+      </div>
+    
+      <div class="news-item">
+        <h3>Anime Convention 2025</h3>
+        <p>Mark your calendars for the upcoming Anime Convention 2025! Get ready for exclusive merchandise, cosplay contests, and meet-and-greets with creators.</p>
+      </div>
+    
+      <div class="news-item">
+        <h3>Streaming Update</h3>
+        <p>More anime titles are now available for streaming! Catch up on classics and discover new favorites on your favorite platforms.</p>
+      </div>
+    
+      <div class="news-item">
+        <h3>Fan Art Contest Winners Announced</h3>
+        <p>Congratulations to the winners of our recent fan art contest! Check out their amazing works on our official website.</p>
+      </div>
+    </div>
   </div>
 
+  <!-- Footer -->
   <div class="footer">
     <p>© 2025 Ani-Scope. All Rights Reserved.</p>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
